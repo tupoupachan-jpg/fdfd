@@ -10,6 +10,7 @@ from typing import Any
 
 import aiohttp
 from bs4 import BeautifulSoup
+from dotenv import load_dotenv
 from telegram import Update
 from telegram.ext import (
     AIORateLimiter,
@@ -19,6 +20,7 @@ from telegram.ext import (
 )
 
 URL = "https://www.auto-meh.ru/student/zameni/"
+load_dotenv()
 STATE_PATH = Path(os.getenv("STATE_FILE", "state.json"))
 CHECK_INTERVAL = int(os.getenv("CHECK_INTERVAL_SECONDS", "600"))
 
