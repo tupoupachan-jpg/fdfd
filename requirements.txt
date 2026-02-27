@@ -1,0 +1,4 @@
+python-telegram-bot[job-queue,rate-limiter]==21.6
+aiohttp==3.10.10
+beautifulsoup4==4.12.3
+python-dotenv==1.0.1
